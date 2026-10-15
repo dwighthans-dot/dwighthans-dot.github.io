@@ -13,7 +13,17 @@ html[data-theme="dark"] .type-tab.active,html[data-theme="dark"] .type-tab:hover
 html[data-theme="dark"] .field input,html[data-theme="dark"] .field textarea,html[data-theme="dark"] .field select,html[data-theme="dark"] .option-row select{background:var(--surface2);color:var(--text);border-color:var(--line)}
 html[data-theme="dark"] footer{color:var(--muted)}
 
-.seo-intro{max-width:900px;margin:28px auto 0;padding:20px 24px;border:1px solid var(--line);border-radius:18px;background:var(--surface);color:var(--muted)}.seo-intro h2{margin:0 0 8px;color:var(--text);font-size:18px}.seo-intro p{margin:0;font-size:12px;line-height:1.7}@media(max-width:560px){.seo-intro{padding:16px;margin-top:20px}}
 
-/* SEO content section — keeps the existing QR ST Creator visual language */
-.seo-content{max-width:1180px;margin:0 auto 52px;padding:0 24px}.seo-intro{max-width:none;margin:0;padding:28px;border:1px solid var(--line);border-radius:22px;background:var(--surface);color:var(--muted);box-shadow:var(--shadow)}.seo-intro h2{margin:0 0 10px;color:var(--text);font-size:clamp(21px,3vw,28px);letter-spacing:-.5px}.seo-intro h3{margin:22px 0 8px;color:var(--text);font-size:16px}.seo-intro p{margin:0;font-size:13px;line-height:1.8}.seo-columns{display:grid;grid-template-columns:1fr 1fr;gap:24px}.seo-faq{margin-top:8px}.seo-faq details{border-top:1px solid var(--line);padding:13px 0}.seo-faq summary{color:var(--text);font-size:13px;font-weight:750;cursor:pointer}.seo-faq details p{padding:9px 0 2px}@media(max-width:700px){.seo-content{padding:0 14px;margin-bottom:35px}.seo-intro{padding:20px}.seo-columns{grid-template-columns:1fr;gap:0}}
+/* SEO section: aligned with the main page container, without affecting the app grid */
+.seo-content{width:100%;max-width:1180px;margin:0 auto 52px;padding:0 24px;clear:both}
+.seo-intro{width:100%;max-width:none;margin:0;padding:28px;border:1px solid var(--line);border-radius:22px;background:var(--surface);color:var(--muted);box-shadow:var(--shadow);overflow-wrap:anywhere}
+.seo-intro h2{margin:0 0 10px;color:var(--text);font-size:clamp(21px,3vw,28px);line-height:1.25;letter-spacing:-.5px}
+.seo-intro h3{margin:22px 0 8px;color:var(--text);font-size:16px;line-height:1.4}
+.seo-intro p{margin:0;font-size:13px;line-height:1.8}
+.seo-columns{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:24px}
+.seo-faq{margin-top:8px}
+.seo-faq details{border-top:1px solid var(--line);padding:13px 0}
+.seo-faq summary{color:var(--text);font-size:13px;font-weight:750;line-height:1.5;cursor:pointer}
+.seo-faq details p{padding:9px 0 2px}
+@media(max-width:700px){.seo-content{padding:0 14px;margin-bottom:35px}.seo-intro{padding:20px}.seo-columns{grid-template-columns:minmax(0,1fr);gap:0}}
+@media(max-width:560px){.seo-intro{padding:16px}.seo-intro h2{font-size:22px}}
